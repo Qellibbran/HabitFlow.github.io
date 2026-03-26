@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-bottom: 1px solid #333;
+    text-align: center;
+}
+
+.logo { font-weight: bold; font-size: 20px; color: #4CAF50; }
+
+.wrapper {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-right: 1px solid #333;
+}
+
+.sidebar a {
+    display: block;
+    color: #bbb;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+.sidebar a:hover { color: #4CAF50; }
+
+.content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.card {
+    background-color: #222;
+    padding: 30px;
+    border-radius: 12px;
+    width: 400px;
+    height: fit-content;
+    text-align: center;
+}
+
+.bar-out {
+    background-color: #444;
+    height: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+#bar-in {
+    background-color: #4CAF50;
+    height: 100%;
+    width: 0%;
+}
+
+.input-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    background: #333;
+    border: 1px solid #444;
+    color: white;
+}
+
+button#addBtn {
+    background: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+ul { list-style: none; padding: 0; text-align: left; }
+
+li {
+    background: #2a2a2a;
+    padding: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.completed span { text-decoration: line-through; color: #666; }
+
+.del-btn {
+    background: none;
+    border: none;
+    color: #ff4d4d;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#empty { margin: 20px 0; }
+
+.footer {
+    background-color: #1f1f1f;
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #333;
+}
